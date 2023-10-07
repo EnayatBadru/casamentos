@@ -1,3 +1,8 @@
+
+// TODOS DIREITOS RESERVADOS  
+// CRIADO: 07/10/2023
+// AUTOR:  ENAYATOLAH AGIBO BADRU 
+
 const rightSvgTop = document.querySelectorAll('.right-svg-top');
 const password = document.querySelector('#password');
 const rightSvgBottom = document.querySelectorAll('.right-svg-bottom');
