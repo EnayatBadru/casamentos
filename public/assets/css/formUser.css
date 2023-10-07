@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body
+{
+    background-image: url(../../../public/img/background3.jpg);
+}
+
+.title
+{
+    letter-spacing: 2px;
+    color: var(--clr8);
+    font-weight: bolder;
+    text-shadow: 0 0 2px rgba(0,0,0,.2);
+}
+
+.input input
+{
+    border: 1px solid var(--clr7);
+    outline: none;
+    letter-spacing: 2px;
+    color: var(--clr8);
+    transition: var(--trs1);
+}
+
+.input label
+{
+    border: 1px solid transparent;
+    pointer-events: none;
+    letter-spacing: 2px;
+    color: var(--clr8);
+    transition: var(--trs1);
+}
+
+.input input:valid,
+.input input:focus
+{
+    background: var(--clr1);
+}
+
+.input input:valid ~ label,
+.input input:focus ~ label
+{
+    border-left-color: var(--clr7);
+    border-right-color: var(--clr7);
+    background: var(--clr1);
+    transform: translate(10px, -23px);
+    padding: 0 5px;
+    font-size: .76em;
+    transition: var(--trs1);
+}
+
+svg
+{
+    pointer-events: none;
+    width: 15px;
+    fill: var(--clr8);
+}
+
+.right-svg-top,
+.right-svg-bottom
+{
+    transform: translateX(-0.5em);
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    z-index: 2;
+}
+
+.right-svg-top svg,
+.right-svg-bottom svg
+{
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.right-svg-top svg.active,
+.right-svg-bottom svg.active
+{
+    visibility: visible;
+    z-index: 2;
+}
+
+.submit div:nth-child(1) input{
+    width: 15px;
+    height: 15px;
+}
+
+.submit div:nth-child(1) label,
+.submit a
+{
+    color: var(--clr9);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn button
+{
+    background: var(--clr1);
+    outline: none;
+    border: 1px solid var(--clr7);
+    color: var(--clr9);
+    cursor: pointer;
+    transition: var(--trs1);
+}
+
+.btn button svg
+{  
+    fill: var(--clr9);
+}
+
+.btn button:hover
+{
+    background: var(--clr2);
+}
