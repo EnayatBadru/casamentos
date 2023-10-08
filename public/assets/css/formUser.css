@@ -14,6 +14,27 @@ body {
   background-image: url(../../../public/img/background3.jpg);
 }
 
+.lang{
+    position: absolute;
+    right: 0;
+    width: 120px;
+    margin: 50px 150px;
+    border-radius: .25em;
+    border: 1px solid var(--clr7);
+    background: var(--clr2);
+}
+
+.lang a{
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: var(--clr9);
+}
+
 .title {
   letter-spacing: 2px;
   font-size: 1.5em;
